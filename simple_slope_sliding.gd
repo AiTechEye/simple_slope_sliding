@@ -6,8 +6,8 @@ if $raycast.is_colliding():
 		#velocity is from by your code
 		velocity += slide_dir * 5
 		#use to rotate the character
-		$character.rotation.y = atan2(slide_dir.x,slide_dir.y+slide_dir.z)
+		$character.rotate.y = atan2(slide_dir.x,slide_dir.y+slide_dir.z)
 		#use to tilt the character
-		$character.rotation.x = deg2rad(slope_angle)
+		$character.rotate.x = deg2rad(slope_angle)
 	$character.move_and_slide(velocity,Vector3(0,1,0))
 	
