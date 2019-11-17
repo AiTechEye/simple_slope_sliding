@@ -6,6 +6,4 @@ a fast help if you need to make a character:
 1: detect slopes  
 2: slide downhill  
 3: rotate the character to right direction  
-4: tild tthe character  
-
-hope this is helpful :)
+4: tild the character  
