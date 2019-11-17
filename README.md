@@ -1,4 +1,4 @@
-# simple slope sliding
+# 3D simple slope sliding
 ## License: LGPL-2.1
 
 a fast help if you need to make a character:
