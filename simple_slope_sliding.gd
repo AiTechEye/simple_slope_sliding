@@ -3,9 +3,11 @@ if $raycast.is_colliding():
 	var slope_angle = (rad2deg(acos(n.dot(Vector3(0,-1,0)))) -180)*-1
 	if slope_angle > 20:
 		var slide_dir = n.slide(Vector3(0,-1,0))
+		#velocity is from by your code
 		velocity += slide_dir * 5
-		var angle = slope_angle
+		#use to rotate the character
 		$character.rotation.y = atan2(slide_dir.x,slide_dir.y+slide_dir.z)
-		$character.rotation.x = deg2rad(sliding.angle)
-	$character.move_and_slide(character.body.get_floor_velocity()+velocity,Vector3(0,1,0))
+		#use to tild the character
+		$character.rotation.x = deg2rad(slope_angle)
+	$character.move_and_slide(velocity,Vector3(0,1,0))
 	
