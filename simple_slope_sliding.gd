@@ -5,6 +5,7 @@ if $raycast.is_colliding():
 		var slide_dir = n.slide(Vector3(0,-1,0))
 		#velocity is from by your code
 		velocity += slide_dir * 5
+		velocity.y = slope_angle
 		#use to rotate the character
 		$character.rotate.y = atan2(slide_dir.x,slide_dir.y+slide_dir.z)
 		#use to tilt the character
